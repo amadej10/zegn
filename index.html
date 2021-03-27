@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zegn</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: black;">
+    
+    <!-- <input id="ime" type="button">>Požegnaj me</input> -->
+    <a class="center hidden" href="#" id="gumb">Požegnaj me</a>
+    <h1 id="naslov" class="hidden">Blagoslovljen bodi</h1>
+    <img id="gif" class="hidden" src="./zegn.gif">
+</body>
+<script>
+
+    function pokazi(){
+        // var ime = $('#ime').val();
+        $('#gumb').hide();
+        // console.log(ime);
+        $("#naslov").html("Blagoslovljen bodi!");
+        $("#naslov").removeClass("hidden");
+        $("#gif").removeClass("hidden");
+
+    };
+
+    $('#gumb').click(function (){
+        pokazi();
+    });
+
+    // $("#ime").on('keyup', function (e) {
+    // if (e.key === 'Enter' || e.keyCode === 13) {
+    //     // Do something
+    //     pokazi();
+    // }
+
+    
+
+// });
+</script>
+</html>
